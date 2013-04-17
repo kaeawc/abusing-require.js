@@ -1,0 +1,20 @@
+<html>
+<head>
+	<script type="text/javascript" data-main="js/main" src="js/vendor/require.js"></script>
+	<script type="text/javascript" >
+	define('config', function() {
+		// For sending dynamic bits of configuration to JavaScript on page load.
+		// Totally unnecessary if the web server has an API decoupled from serving HTML.
+		// Otherwise you're stuck doing silly things like this.
+		var globals = {
+			dynamicSetting : "Dynamic Setting"
+		};
+
+		return globals;
+	});
+	require(['app']);
+	</script>
+</head>
+<body>
+</body>
+</html>
